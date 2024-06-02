@@ -1,0 +1,179 @@
+{
+  "users": [
+    {
+      "id": "36d3",
+      "username": "sample",
+      "email": "meka123@gmail.com",
+      "password": "2w2e32r4r"
+    }
+  ],
+
+  
+  
+    "houses": [
+      {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1615800001964-5afd0ae8e49a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGludGVyaW9yfGVufDB8fDB8fHww",
+        "location": "New York",
+        "type": "Apartment",
+        "distance": "2 miles",
+        "price": "$200,000"
+      },
+      {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1615800002234-05c4d488696c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGludGVyaW9yfGVufDB8fDB8fHww",
+        "location": "San Francisco",
+        "type": "House",
+        "distance": "5 miles",
+        "price": "$1,200,000"
+      },
+      {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1597935258735-285ded529e93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D",
+        "location": "Los Angeles",
+        "type": "Condo",
+        "distance": "3 miles",
+        "price": "$800,000"
+      },
+      {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mjl8fHxlbnwwfHx8fHw%3D",
+        "location": "Chicago",
+        "type": "Townhouse",
+        "distance": "4 miles",
+        "price": "$450,000"
+      },
+      {
+        "id": 5,
+        "image": "https://plus.unsplash.com/premium_photo-1680100256112-2e1231d9d0df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGludGVyaW9yfGVufDB8fDB8fHww",
+        "location": "Houston",
+        "type": "Villa",
+        "distance": "8 miles",
+        "price": "$750,000"
+      },
+      {
+        "id": 6,
+        "image": "https://images.unsplash.com/photo-1584882569735-fb802a4c6c78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGludGVyaW9yfGVufDB8fDB8fHww",
+        "location": "Phoenix",
+        "type": "Bungalow",
+        "distance": "12 miles",
+        "price": "$600,000"
+      },
+      {
+        "id": 7,
+        "image": "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGludGVyaW9yfGVufDB8fDB8fHww",
+        "location": "Philadelphia",
+        "type": "Cottage",
+        "distance": "15 miles",
+        "price": "$300,000"
+      },
+      {
+        "id": 8,
+        "image": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGludGVyaW9yfGVufDB8fDB8fHww",
+        "location": "San Antonio",
+        "type": "House",
+        "distance": "7 miles",
+        "price": "$500,000"
+      },
+      {
+        "id": 9,
+        "image": "https://images.unsplash.com/photo-1635286721033-e11cf9e632c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQzfHx2YWNhdGlvbiUyMHJlbnRhbHxlbnwwfHwwfHx8MA%3D%3D",
+        "location": "San Diego",
+        "type": "Apartment",
+        "distance": "5 miles",
+        "price": "$900,000"
+      },
+      {
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1631215320889-7cf5eb3224f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAzfHx2YWNhdGlvbiUyMHJlbnRhbHxlbnwwfHwwfHx8MA%3D%3D",
+        "location": "Dallas",
+        "type": "House",
+        "distance": "6 miles",
+        "price": "$1,000,000"
+      },
+      {
+        "id": 11,
+        "image": "https://images.unsplash.com/photo-1531931561479-c044f20c36aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fHZhY2F0aW9uJTIwcmVudGFsfGVufDB8fDB8fHww",
+        "location": "San Jose",
+        "type": "Villa",
+        "distance": "10 miles",
+        "price": "$850,000"
+      },
+      {
+        "id": 12,
+        "image": "https://images.unsplash.com/photo-1595327023008-bce2898309c0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fHZhY2F0aW9uJTIwcmVudGFsfGVufDB8fDB8fHww",
+        "location": "Austin",
+        "type": "Condo",
+        "distance": "9 miles",
+        "price": "$700,000"
+      },
+      {
+        "id": 13,
+        "image": "https://images.unsplash.com/photo-1604809173867-6b6aef726a41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHZhY2F0aW9uJTIwcmVudGFsfGVufDB8fDB8fHww",
+        "location": "Jacksonville",
+        "type": "Townhouse",
+        "distance": "11 miles",
+        "price": "$650,000"
+      },
+      {
+        "id": 14,
+        "image": "https://images.unsplash.com/photo-1613073597412-e2e8de6fb5f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHZhY2F0aW9uJTIwcmVudGFsfGVufDB8fDB8fHww",
+        "location": "Fort Worth",
+        "type": "Bungalow",
+        "distance": "13 miles",
+        "price": "$550,000"
+      },
+      {
+        "id": 15,
+        "image": "https://images.unsplash.com/photo-1639060631449-4a3ba54a203a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHZhY2F0aW9uJTIwcmVudGFsfGVufDB8fDB8fHww",
+        "location": "Columbus",
+        "type": "Cottage",
+        "distance": "16 miles",
+        "price": "$400,000"
+      },
+      {
+        "id": 16,
+        "image": "https://images.unsplash.com/photo-1622396481328-9b1b78cdd9fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHZhY2F0aW9uJTIwcmVudGFsfGVufDB8fDB8fHww",
+        "location": "Charlotte",
+        "type": "Apartment",
+        "distance": "14 miles",
+        "price": "$600,000"
+      },
+      {
+        "id": 17,
+        "image": "https://images.unsplash.com/photo-1618220179428-22790b461013?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b25saW5lJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
+        "location": "San Francisco",
+        "type": "House",
+        "distance": "3 miles",
+        "price": "$1,500,000"
+      },
+      {
+        "id": 18,
+        "image": "https://images.unsplash.com/photo-1585264550534-7890a89b7270?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM1fHxpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D",
+        "location": "Indianapolis",
+        "type": "Condo",
+        "distance": "6 miles",
+        "price": "$700,000"
+      },
+      {
+        "id": 19,
+        "image": "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmFjYXRpb24lMjByZW50YWx8ZW58MHx8MHx8fDA%3D",
+        "location": "Seattle",
+        "type": "Villa",
+        "distance": "5 miles",
+        "price": "$900,000"
+      },
+      {
+        "id": 20,
+        "image": "https://images.unsplash.com/photo-1602872029708-84d970d3382b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI4fHxpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D",
+        "location": "Columbus",
+        "type": "Townhouse",
+        "distance": "8 miles",
+        "price": "$750,000"
+      }
+    ]
+  }
+  
+  
+
+

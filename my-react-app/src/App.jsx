@@ -1,13 +1,30 @@
 // src/App.jsx
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SignUp from './signup';
-// import './App.css';
+import Login from './login';
+import Navbar from './Navbar';
+import Home from './Home';
+import Profile from './profile';
+import ListYourHome from './ListYourHome';
+import HelpAndSupport from './HelpandSupport';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <SignUp />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/list-your-home" element={<ListYourHome />} />
+          <Route path="/help-and-support" element={<HelpAndSupport />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

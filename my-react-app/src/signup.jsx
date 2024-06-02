@@ -1,8 +1,11 @@
 // src/SignUp.jsx
 import React, { useState } from 'react';
-import './App.css'
+import Modal from 'react-modal';
+import './signup.css';
 
-const SignUp = () => {
+Modal.setAppElement('#root');
+
+const SignUp = ({ isOpen, onRequestClose }) => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,22 +17,21 @@ const SignUp = () => {
     await fetch('http://localhost:3000/users', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(user)
+      body: JSON.stringify(user),
     });
 
     setUsername('');
     setEmail('');
     setPassword('');
+    onRequestClose();
   };
 
   return (
-    <div className="sign-up-container">
+    <Modal isOpen={isOpen} onRequestClose={onRequestClose} className="Modal" overlayClassName="Overlay">
       <form className="sign-up-form" onSubmit={handleSubmit}>
-        <div className="bubble-element Text baTerg">
-          Sign up
-        </div>
+        <div className="form-title">Sign up</div>
         <div className="form-group">
           <label>Username:</label>
           <input
@@ -57,9 +59,9 @@ const SignUp = () => {
             required
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit" className="signup-button">Sign Up</button>
       </form>
-    </div>
+    </Modal>
   );
 };
 
