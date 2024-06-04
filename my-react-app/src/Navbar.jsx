@@ -48,12 +48,22 @@ const Navbar = () => {
           className="logo"
         />
       </Link>
-      <img
-        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-        alt="Profile"
-        className="profile-picture"
-        onClick={toggleMenu}
-      />
+      <div className="navbar-right">
+        <Link to="/hosting" className="hosting-link">
+          Switch to Hosting
+          <img
+            src="https://cdn-icons-png.freepik.com/256/6234/6234658.png?semt=ais_hybrid"
+            alt="Hosting Icon"
+            className="hosting-icon"
+          />
+        </Link>
+        <img
+          src="https://img.icons8.com/?size=50&id=25620&format=png"
+          alt="Profile"
+          className="profile-picture"
+          onClick={toggleMenu}
+        />
+      </div>
       {isOpen && (
         <div ref={menuRef} className="dropdown-menu">
           <Link to="/">Home</Link>
