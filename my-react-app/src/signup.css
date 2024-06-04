@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px; /* Add padding to the form */
+  padding: 0 20px;
 }
 
 .form-title {
@@ -71,11 +71,11 @@
 
 .form-group input,
 .form-group select {
-  width: calc(100% - 40px); /* Reduce width to allow spacing from borders */
-  padding: 8px; /* Reduce padding */
+  width: calc(100% - 40px);
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-left: 20px; /* Add left margin for spacing from the left border */
+  margin-left: 20px;
 }
 
 .phone-input {
@@ -84,9 +84,9 @@
 }
 
 .phone-input select {
-  width: calc(20% - 30px); /* Adjust width to allow spacing */
+  width: calc(20% - 30px);
   margin-right: 10px;
-  margin-left: 20px; /* Add left margin for spacing from the left border */
+  margin-left: 20px;
 }
 
 .signup-button {
@@ -97,7 +97,7 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-left: 20px; /* Add left margin for spacing from the left border */
+  margin-left: 20px;
 }
 
 .signup-button:hover {
@@ -107,5 +107,16 @@
 .form-error {
   color: red;
   margin-bottom: 15px;
-  margin-left: 20px; /* Add left margin for spacing from the left border */
+  margin-left: 20px;
+}
+
+.signin-option {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signin-link {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
 }

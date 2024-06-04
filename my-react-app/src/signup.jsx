@@ -1,6 +1,9 @@
 // src/SignUp.jsx
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 import './signup.css';
 
 Modal.setAppElement('#root');
@@ -8,8 +11,7 @@ Modal.setAppElement('#root');
 const SignUp = ({ isOpen, onRequestClose }) => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [countryCode, setCountryCode] = useState('+1');
+  const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -17,7 +19,7 @@ const SignUp = ({ isOpen, onRequestClose }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const user = { firstName, lastName, phoneNumber: `${countryCode}${phoneNumber}`, email, password };
+    const user = { firstName, lastName, phone, email, password };
 
     if (password !== confirmPassword) {
       setError("Passwords do not match!");
@@ -44,8 +46,7 @@ const SignUp = ({ isOpen, onRequestClose }) => {
 
     setFirstName('');
     setLastName('');
-    setPhoneNumber('');
-    setCountryCode('+1');
+    setPhone('');
     setEmail('');
     setPassword('');
     setConfirmPassword('');
@@ -60,7 +61,7 @@ const SignUp = ({ isOpen, onRequestClose }) => {
         <div className="signup-subtitle">Create Your Account</div>
       </div>
       <form className="sign-up-form" onSubmit={handleSubmit}>
-        <div className="form-title">Sign up</div>
+      
         {error && <div className="form-error">{error}</div>}
         <div className="form-group">
           <label>First Name:</label>
@@ -82,20 +83,22 @@ const SignUp = ({ isOpen, onRequestClose }) => {
         </div>
         <div className="form-group">
           <label>Phone Number:</label>
-          <div className="phone-input">
-            <select value={countryCode} onChange={(e) => setCountryCode(e.target.value)} required>
-              <option value="+1">+1</option>
-              <option value="+44">+44</option>
-              <option value="+91">+91</option>
-              {/* Add more country codes as needed */}
-            </select>
-            <input
-              type="tel"
-              value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-              required
-            />
-          </div>
+          <PhoneInput
+            country={'us'}
+            value={phone}
+            onChange={setPhone}
+            inputStyle={{
+              width: '100%',
+              padding: '8px',
+              border: '1px solid #ccc',
+              borderRadius: '4px',
+              marginLeft: '20px'
+            }}
+            containerStyle={{
+              width: '95%',
+              marginLeft: '10px'
+            }}
+          />
         </div>
         <div className="form-group">
           <label>Email:</label>
@@ -126,6 +129,9 @@ const SignUp = ({ isOpen, onRequestClose }) => {
         </div>
         <button type="submit" className="signup-button">Sign Up</button>
       </form>
+      <div className="signin-option">
+        Already have an account? <Link to="/login" className="signin-link">Login</Link>
+      </div>
     </Modal>
   );
 };
