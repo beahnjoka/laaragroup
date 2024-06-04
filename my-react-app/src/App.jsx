@@ -8,6 +8,7 @@ import Home from './Home';
 import Profile from './profile';
 import ListYourHome from './ListYourHome';
 import HelpAndSupport from './HelpandSupport';
+import Filters from './Filters';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
+         <Filters/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />

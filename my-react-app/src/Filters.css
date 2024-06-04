@@ -1,0 +1,36 @@
+/* src/Filters.css */
+.filters {
+    position: fixed; /* Make filters fixed */
+    top: 60px; /* Adjust to be below the navbar */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center filters horizontally */
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    background-color: #ffffff;
+    z-index: 999; /* Ensure it stays above other elements */
+    gap: 15px; /* Space between filters */
+    margin-bottom: 20px;
+  }
+  
+  .filter-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px dotted #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size for filters */
+  }
+  
+  .filter-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .filter-icon {
+    margin-left: 8px; /* Space between text and icon */
+    width: 12px; /* Smaller icon size */
+    height: 12px; /* Smaller icon size */
+  }
+  
