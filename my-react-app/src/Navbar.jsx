@@ -41,15 +41,25 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <button className="menu-button" onClick={toggleMenu}>
-        Menu
-      </button>
+      <Link to="/" className="logo-link">
+        <img
+          src="https://a6ac9d2e70b25f5b91b1f436d0f800f3.cdn.bubble.io/f1713297328630x377789177477646700/Web%20logo.svg"
+          alt="Logo"
+          className="logo"
+        />
+      </Link>
+      <img
+        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+        alt="Profile"
+        className="profile-picture"
+        onClick={toggleMenu}
+      />
       {isOpen && (
         <div ref={menuRef} className="dropdown-menu">
           <Link to="/">Home</Link>
           <Link to="/profile">My Profile</Link>
           <Link to="/login">Login</Link>
-          <button className="menu-link" onClick={openSignUpModal}>Sign Up</button>
+          <a href="#" onClick={openSignUpModal}>Sign Up</a>
           <Link to="/list-your-home">List Your Home</Link>
           <Link to="/help-and-support">Help and Support</Link>
         </div>
