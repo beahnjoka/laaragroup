@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import SignUp from './signup';
+import SignUp from '../logins/signup';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

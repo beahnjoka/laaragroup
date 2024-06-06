@@ -1,14 +1,14 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SignUp from './signup';
-import Login from './login';
-import Navbar from './Navbar';
-import Home from './Home';
-import Profile from './profile';
-import ListYourHome from './ListYourHome';
-import HelpAndSupport from './HelpandSupport';
-import Filters from './Filters';
+import SignUp from './components/logins/signup';
+import Login from './components/logins/login';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Profile from './components/Home/profile';
+import ListYourHome from './components/Home/ListYourHome';
+import HelpAndSupport from './components/Home/HelpandSupport';
+import Filters from './components/Navbar/Filters';
 import './App.css';
 
 function App() {

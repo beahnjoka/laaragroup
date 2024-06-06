@@ -21,7 +21,7 @@
     border-radius: 8px;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    font-size: 12px; /* Smaller font size for filters */
+    font-size: 18px; /* Smaller font size for filters */
   }
   
   .filter-item:hover {
@@ -30,7 +30,7 @@
   
   .filter-icon {
     margin-left: 8px; /* Space between text and icon */
-    width: 12px; /* Smaller icon size */
-    height: 12px; /* Smaller icon size */
+    width: 18px; /* Smaller icon size */
+    height: 18px; /* Smaller icon size */
   }
   
