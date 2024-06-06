@@ -1,0 +1,124 @@
+/* src/SignUp.css */
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  z-index: 2000;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1500;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-title {
+  background-color: red;
+  color: white;
+  font-family: 'Times New Roman';
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.signup-subtitle {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 40px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.phone-input {
+  display: flex;
+  width: 100%;
+}
+
+.phone-input select {
+  width: calc(20% - 30px);
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.signup-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+
+.signup-button:hover {
+  background-color: darkred;
+}
+
+.form-error {
+  color: red;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.signin-option {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signin-link {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
